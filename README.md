@@ -6,7 +6,7 @@ Running the `.py` files one by one should be enough to recover the private image
 
 Files 1-4 are the preprocessing steps, in which files 1-2 are for generating training datasets, and files 3-4 are for training attack models (i.e., the Comparative Network and Fusion-Denoising Network). Files 5-6 contain the attacking algorithms, whose inputs comprise two files: `encryption.npy` including all encrypted images, and `label.npy` including the corresponding labels of encrypted images. The file formats are consistent with the [InstaHide Challenge dataset](https://github.com/Hazelsuko07/InstaHide_Challenge).
 
-We provide some toy datasets in `ToyData/` to help run files 1-6 smoothly, and the images recovered from the toy datasets are expected to be meaningless. The four datasets used in the paper ([CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html), [STL10](https://cs.stanford.edu/~acoates/stl10/) and [CelebFaces](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) ) are all public and not provided in this repository because the sizes of these data files are relatively large. The interested users may consider downloading these public datasets and training the attack models from scratch. 
+We provide some toy datasets in `ToyData/` to help run files 1-6 smoothly, and the images recovered from the toy datasets are expected to be meaningless. The four datasets used in the paper ([CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html), [STL10](https://cs.stanford.edu/~acoates/stl10/) and [CelebFaces](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) ) are all public and not provided in this repository because the sizes of these data files are relatively large. The interested readers may consider downloading these public datasets and training the attack models from scratch. 
 
 Install requirements in a virtualenv using:
 
@@ -33,11 +33,11 @@ If you use our results or this codebase in your research, then please cite this 
 
 
 ### Note
-The clustering algorithm on the encrypted images is inspired by [2]. The authors can refer to this [repository](https://github.com/carlini/privacy/commit/28b8a80924cf3766ab3230b5976388139ddef295) for a different implementation of the clustering step.
+The clustering step on the encrypted images is inspired by [2]. The reader can also refer to [the repository](https://github.com/carlini/privacy/commit/28b8a80924cf3766ab3230b5976388139ddef295) for a different implementation of the clustering algorithm.
 
 
 ## Reference
-[1] [**A Fusion-Denoising Attack on InstaHide with Data Augmentation**](https://arxiv.org/abs/2010.10152), *Xinjian Luo, Xiaokui Xiao, Yuncheng Wu, Juncheng Liu, Beng Chin Ooi*, AAAI 2022.
+[1] [**A Fusion-Denoising Attack on InstaHide with Data Augmentation**](https://arxiv.org/abs/2105.07754), *Xinjian Luo, Xiaokui Xiao, Yuncheng Wu, Juncheng Liu, Beng Chin Ooi*, AAAI 2022.
 
 [2] [**Is Private Learning Possible with Instance Encoding?**](https://arxiv.org/abs/2011.05315), *Nicholas Carlini, Samuel Deng, Sanjam Garg, Somesh Jha, Saeed Mahloujifar, Mohammad Mahmoody, Shuang Song, Abhradeep Thakurta, Florian Tramer*, SP 2021.
 
