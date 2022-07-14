@@ -8,7 +8,7 @@ Files 1-4 are the preprocessing steps, in which files 1-2 are for generating tra
 
 We provide some toy datasets in `ToyData/` to help run files 1-6 smoothly, and the images recovered from the toy datasets are expected to be meaningless. The four datasets used in the paper ([CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html), [STL10](https://cs.stanford.edu/~acoates/stl10/) and [CelebFaces](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) ) are all public and not provided in this repository because the sizes of these data files are relatively large. The interested readers may consider downloading these public datasets and training the attack models from scratch. 
 
-Install requirements in a virtualenv using:
+Install the python library requirements in a virtual environment using:
 
     pip install -r requirements.txt
 
